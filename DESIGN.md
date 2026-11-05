@@ -1,36 +1,16 @@
----
-name: RSV — The Art of Care
-colors:
-  ink: '#090b0c'
-  paper: '#f2f3f0'
-  accent: '#e4382c'
-  silver: '#9b9f9d'
-  line: '#d5d8d3'
-typography:
-  display: 'Onest, Manrope, Arial, sans-serif'
-  body: 'Manrope, Arial, sans-serif'
-  utility: 'monospace'
----
+# UP Service
 
-# RSV — The Art of Care
+## Authority and intent
+UP_Service_TZ_site.pdf, 7 pages, supersedes the earlier RSV brand. User authorizes demo content while business information is pending. Public site remains explicitly labelled as a demo. No fabricated testimonials or service premises. Editorial automotive design: cinematic hero, large quiet typography, precise technical illustrations, functional booking.
 
-## Approved direction change
-The user rejected the previous condensed/outlined/card-grid direction and explicitly authorized removing or changing any design element. Full brand-site recomposition. Keep original service facts, contacts and real workshop images; no invented prices, statistics, customer testimonials or warranty terms.
+## Tokens and runtime ownership
+public/up.css owns brand colors: black #101010, graphite #1C1C1C, yellow #F5CE27, white #FFFFFF. Manrope is served locally. public/motion.css extends the same tokens, responsive grids, global scrollbar and motion. No second design system. Shared button, secondary link, form, dialog and focus styles are used on all routes. Administrative fields share the public form style.
 
-## North star
-Automotive engineering as a photographic exhibition. One sculptural car still, oversized quiet lowercase typography and a close-up impeller through a three-chapter scroll sequence. Avoid outlined type, racing-game interfaces, meaningless indices, dashboards, scan lines and generic card grids.
+## Image and composition rules
+Hero car artwork appears once. Impeller editorial image appears once in About; explicitly an illustration pending real photographs. Service cards use five original SVG engineering scenes, never duplicate hero photographs. These are decorative illustrations, not claims about actual equipment. Two large service cards followed by three smaller cards; one column on narrow viewports. Owner gallery, once supplied, is driven by config.
 
-## Tokens and layout
-`dist/cinematic.css :root` owns runtime tokens. Ink #090b0c, mineral paper #f2f3f0, signal red #e4382c, silver #9b9f9d, line #d5d8d3. Light Onest display with tight tracking; Manrope body/controls, locally hosted. Spacing 12/24/48/80/120/160. Uneven editorial composition. Pill primary controls, otherwise flat unboxed surfaces.
+## Motion
+public/motion.js owns shared IntersectionObserver entry and offscreen pause behavior. Reveal: 850 ms, cubic-bezier(.16,1,.3,1), 65 ms stagger capped at 195 ms; touch movement 20 px. Hero entrance 2.2 s once, low-opacity light sweep 12 s. Service diagrams animate slowly only in view. Buttons use short sheen and arrow feedback; no magnetic targets, scroll interception or cursor replacement. All content is visible by default if motion JS fails. Footer toggle pauses all decorative movement; reduced-motion always wins and immediately reveals content. Native page transitions progressively enhance supported browsers.
 
-## Narrative and evidence
-Hero → philosophy → precision chapter → service accordion → real workshop evidence → contact. Primary task: understand care approach, find a service and arrange a visit. Russian language, Saratov audience. Real workshop content explicitly labelled. AI-created hero/impeller are artistic images, never presented as actual premises or a completed customer job.
-
-## Motion and behavior
-Native scroll; no scroll hijack, custom cursor or autoplay video. Hero image/title enter once. Bounded sticky desktop precision stage with accessible chapter buttons. Mobile uses ordinary scrolling and buttons. Reduced motion disables scroll transformations/reveals and leaves chapter selection manual. Content readable without JS. Native details for services. Shared labelled booking dialog, trigger focus restored, Escape, stable scrollbar gutter.
-
-## Sources
-Official Hugeicons free Stroke Rounded in icons.js, license retained. AI artwork: atelier-car and atelier-impeller, prompts in ART-DIRECTION.md. Actual workshop photographs: work1.jpeg and work2.jpeg. Fonts retain OFL licenses.
-
-## Booking contract
-No backend is configured. Form prepares a mailto email and explicitly states that the visitor must send it. Phone/email always available. No simulated delivery or fake confirmation.
+## Current delivery
+Demo booking, calculator and owner administration remain functional. Actual phone, schedule, logo, photos, legal information, offer approval and notification integrations are pending owner input. Demo anonymization remains enforced server-side.

@@ -1,8 +1,0 @@
-{
-  "package": "@hugeicons/core-free-icons",
-  "version": "4.4.0",
-  "style": "Stroke Rounded",
-  "source": "https://registry.npmjs.org/@hugeicons/core-free-icons",
-  "subset": "dist/icons.js",
-  "license": "dist/assets/HUGEICONS-LICENSE"
-}
