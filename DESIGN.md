@@ -14,3 +14,6 @@ public/motion.js owns shared IntersectionObserver entry and offscreen pause beha
 
 ## Current delivery
 Demo booking, calculator and owner administration remain functional. Actual phone, schedule, logo, photos, legal information, offer approval and notification integrations are pending owner input. Demo anonymization remains enforced server-side.
+
+## Home hero revision
+The home hero uses Oswald 400 for its two-line primary display and Manrope 400 for the softer detail statement, body and controls. Both are existing locally hosted typefaces with Cyrillic support. No global typography change. public/hero.css is the single hero owner; legacy hero rules were removed from up.css/motion.css. New generated studio artwork is served as a lossless WebP master (1672×941), plus a 1100 px responsive variant. Never describe it as 4K: the image tool returned 1672×941 despite the prompt's 4K request. Image width/height reflect real dimensions, rendered height is auto, and no axis scaling is allowed. The original image remains archived. Brand headline text and owner-editable fallback remain intact.
